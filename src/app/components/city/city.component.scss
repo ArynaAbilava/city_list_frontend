@@ -1,0 +1,14 @@
+.city-content {
+  min-height: 690px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.city-paginator {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  bottom: 0;
+}

@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.request-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn {
+  cursor: pointer;
+}

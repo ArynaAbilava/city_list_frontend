@@ -1,0 +1,12 @@
+<app-toolbar (searchEvent)="setSearch($event)"></app-toolbar>
+<div class="city-content">
+  <app-card *ngFor="let city of cities" [city]="city" (editAction)="getAll()"></app-card>
+</div>
+<mat-paginator
+  class="city-paginator"
+  (page)="handlePageEvent($event)"
+  [pageIndex]="pageIndex"
+  [length]="length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions">
+</mat-paginator>

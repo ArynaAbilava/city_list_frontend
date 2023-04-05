@@ -1,0 +1,19 @@
+<div class="header">
+  <h1 mat-dialog-title>Edit city</h1>
+  <mat-icon class="close-btn" (click)="close()">close</mat-icon>
+</div>
+<div mat-dialog-content>
+  <form class="form" [formGroup]="editForm">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image url</mat-label>
+      <input matInput type="text" formControlName="imageUrl">
+    </mat-form-field>
+    <div class="request-btn">
+      <button mat-button type="submit" (click)="edit()">Edit</button>
+    </div>
+  </form>
+</div>

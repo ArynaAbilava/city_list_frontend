@@ -1,0 +1,7 @@
+<mat-card class="card">
+  <img mat-card-image class="card-image" src="{{city.imageUrl ? city.imageUrl: '/assets/image/default.jpg'}}">
+  <mat-card-content>{{city.name}}</mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="openEditDialog(city!)">Edit</button>
+  </mat-card-actions>
+</mat-card>

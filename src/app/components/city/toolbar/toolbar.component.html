@@ -1,0 +1,6 @@
+<mat-toolbar class="toolbar">
+  <span>City List</span>
+  <mat-form-field class="toolbar-search-input">
+    <input matInput placeholder="Search" [(ngModel)]="searchValue" (keyup.enter)="search()">
+  </mat-form-field>
+</mat-toolbar>
